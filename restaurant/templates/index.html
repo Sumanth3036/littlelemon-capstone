@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <div class="brand">
+                <span class="logo-mark" aria-hidden="true">🍋</span>
+                <div>
+                    <h1>Little Lemon</h1>
+                    <p class="tagline">Chicago</p>
+                </div>
+            </div>
+            <nav>
+                <a href="{% url 'index' %}">Home</a>
+                <a href="/restaurant/menu/">Menu API</a>
+                <a href="/admin/">Admin</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div>
+                    <h2>Mediterranean flavor in the heart of Chicago</h2>
+                    <p>
+                        Little Lemon is a family-owned Mediterranean restaurant that brings
+                        traditional recipes to a modern table. Reserve a table or browse the
+                        menu through our booking and menu APIs.
+                    </p>
+                    <a class="button" href="/restaurant/booking/tables/">Book a table</a>
+                </div>
+                <div class="hero-card">
+                    <h3>Hours</h3>
+                    <p>Tue – Sun</p>
+                    <p>12:00 PM – 10:00 PM</p>
+                    <h3>Contact</h3>
+                    <p>123 Main Street, Chicago</p>
+                    <p>(312) 555-0199</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlights">
+            <div class="container">
+                <h2>This week's specials</h2>
+                <div class="cards">
+                    <article class="card">
+                        <h3>Greek Salad</h3>
+                        <p>Crisp lettuce, peppers, olives and our Chicago-style feta dressing.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Bruschetta</h3>
+                        <p>Grilled bread smeared with garlic and topped with salted tomato and olive oil.</p>
+                    </article>
+                    <article class="card">
+                        <h3>Lemon Dessert</h3>
+                        <p>A bright, creamy finish inspired by a family recipe from the Mediterranean.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; Little Lemon. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
